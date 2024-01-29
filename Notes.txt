@@ -1,0 +1,71 @@
+
+
+Why .NET core?
+
+.NET framework/.NET core  - platform in which we can create .NET applications
+(4.8) - windows
+
+1. Desktop Apps - Console/WPF
+2. Web Applications - Webapps(websites), MVC, API, Blazor apps
+3. Mobile Applications - Xamarin
+
+platform - 1. Languages (C#, VB.NET, J#)
+	2. BCL (Base class Libraries)
+	3. CLR - Runtime Environment - Common Language Runtime
+
+Visual Studio - IDE  - 2022 - Languages, Runtime Environment, Application server(IIS)
+.NET core - 1.0,2.0,2.1,2.2,3.0.5.0,6.0,7.0 and 8.0
+
+C# - language
+
+CLR Architecture:
+
+source code (C#) --> C# compiler --> MSIL/CIL (Intermedediate Language) --> CLR( Just in time compiler) --> Native code --> OS(win,linux,mac)
+														(dll/exe)
+
+Web applications
+
+Websites - collection of web (Razor) pages - Web server - to host the web site created.
+Web application - website+Logic - application server -  IIS 
+
+MVC:
+
+URL Pattern:
+
+https://localhost:3489/ControllerName/ActionMethodName
+
+
+Transferring Data from Controller to View:
+
+1. ViewBag and ViewData - Syntax is different 
+Scope of ViewBag and ViewData is between the action method and the corresponding View
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
