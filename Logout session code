@@ -1,4 +1,4 @@
-startup.cs
+program.cs
 services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 //services.AddSession(s => s.IdleTimeout = TimeSpan.FromMinutes(30));
 
