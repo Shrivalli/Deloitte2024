@@ -1,14 +1,18 @@
 program.cs
-services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 //services.AddSession(s => s.IdleTimeout = TimeSpan.FromMinutes(30));
 
+Layout.cshtml(line no 30)
+<partial name="LoginPartial"/>
+
 LoginPartial.cs
+
 @using Microsoft.AspNetCore.Http
 @inject IHttpContextAccessor HttpContextAccessor
 
 <ul class="navbar-nav">
     @{ 
-        ViewBag.Data = @HttpContextAccessor.HttpContext.Session.GetString("Username");
+        ViewBag.Data = @HttpContextAccessor.HttpContext.Session.GetString("email");
     }
     @if (ViewBag.Data!=null)
     {
@@ -35,6 +39,7 @@ else
 }
 
 LoginController:
+
  private readonly ISession session;
         public LoginController(OrgContext _db, IHttpContextAccessor httpContextAccessor)
         {
